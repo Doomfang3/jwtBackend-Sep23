@@ -4,7 +4,7 @@ router.get('/', (req, res, next) => {
   res.json('All good in here')
 })
 
-const recipesRoutes = './recipes.routes'
-router.use('/recipes', recipesRoutes)
+const booksRoutes = require('./books.routes')
+router.use('/books', booksRoutes)
 
 module.exports = router
